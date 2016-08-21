@@ -33,15 +33,12 @@ class LFContainerView: UIView {
     
     // MARK: Public Methods
     /* This method is used to initialize all children for a navigation inside the current scrollview */
-    func initializeChildControllers(numberOfChildren children: Int, parentController: UIViewController) {
+    func initializeChildControllers(restaurants restaurants: [LFRestaurantDataInterface], parentController: UIViewController) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil);
         var childControllers = [UIViewController]();
-        let colors = [UIColor.yellowColor(), UIColor.orangeColor(), UIColor.greenColor()];
-        for index in 0...children-1 {
+        for restaurant in restaurants {
             if let restaurantCardVC = storyboard.instantiateViewControllerWithIdentifier("LFRestaurantCardViewController") as? LFRestaurantCardViewController {
-                if let restaurantCardView = restaurantCardVC.view as? LFRestaurantCardView {
-                    restaurantCardView.setupBackgroundColor(colors[index] as UIColor);
-                }
+                restaurantCardVC.restaurant = restaurant;
                 childControllers.append(restaurantCardVC);
             }
         }

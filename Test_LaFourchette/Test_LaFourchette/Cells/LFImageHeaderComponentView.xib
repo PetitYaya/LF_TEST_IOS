@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LFImageHeaderComponentView" customModule="Test_LaFourchette" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="l2t-pi-J0y" id="C1U-SQ-ZS2"/>
+                <outlet property="imgView" destination="Aal-NR-WKY" id="yua-Pu-qc0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6hc-bB-dJb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aal-NR-WKY">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="l2t-pi-J0y">
+                    <rect key="frame" x="290" y="65" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="l2t-pi-J0y" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="75d-KD-Tkg"/>
+                <constraint firstItem="Aal-NR-WKY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BzA-ij-acM"/>
+                <constraint firstAttribute="bottom" secondItem="Aal-NR-WKY" secondAttribute="bottom" id="Jzz-YD-Rxd"/>
+                <constraint firstItem="l2t-pi-J0y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gV6-nA-UBa"/>
+                <constraint firstAttribute="trailing" secondItem="Aal-NR-WKY" secondAttribute="trailing" id="ral-z4-NuZ"/>
+                <constraint firstItem="Aal-NR-WKY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uY7-YN-Zi0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="432" y="21.5"/>
+        </view>
+    </objects>
+</document>

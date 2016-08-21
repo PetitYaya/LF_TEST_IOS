@@ -10,12 +10,19 @@ import UIKit
 
 class LFContainerViewController: UIViewController {
 
+    private var presenter : LFRestaurantContainerPresenter!;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        presenter = LFRestaurantContainerPresenter();
         if let containerView = self.view as? LFContainerView {
-            containerView.initializeChildControllers(numberOfChildren: 3, parentController: self);
+            presenter.downloadRestaurants({ (restaurants) in
+                containerView.initializeChildControllers(restaurants: restaurants, parentController: self);
+            }) { (error) in
+                
+            }
         }
     }
 

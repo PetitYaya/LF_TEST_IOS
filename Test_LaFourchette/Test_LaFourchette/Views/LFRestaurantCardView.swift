@@ -21,9 +21,10 @@ class LFRestaurantCardView: UIView {
     */
     
     // MARK: Public Methods
-    /* For debug purpose, need to be removed */
-    func setupBackgroundColor(color: UIColor?) {
-        self.collectionView.backgroundColor = color;
+    func bindViewWithPresenter(presenter: LFRestaurantCardPresenter) {
+        if let layoutStrategy = presenter.retrieveLayout() as? LFRestaurantCardCollectionViewLayoutStrategy {
+            self.collectionView.dataSource  = layoutStrategy;
+            self.collectionView.delegate    = layoutStrategy;
+        }
     }
-
 }

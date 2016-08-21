@@ -20,6 +20,12 @@
 		CC9FB0EF1D699339001989DF /* LFNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0EE1D699339001989DF /* LFNetworkManager.swift */; };
 		CC9FB0F11D699425001989DF /* LFNetworkEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0F01D699425001989DF /* LFNetworkEndpoints.swift */; };
 		CC9FB0F31D699AF3001989DF /* LFRestaurantBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0F21D699AF3001989DF /* LFRestaurantBO.swift */; };
+		CC9FB0F51D69A318001989DF /* LFScrollingHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0F41D69A318001989DF /* LFScrollingHeaderReusableView.swift */; };
+		CC9FB0F71D69A3C8001989DF /* LFImageHeaderComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0F61D69A3C8001989DF /* LFImageHeaderComponentView.swift */; };
+		CC9FB0F91D69A3E5001989DF /* LFImageHeaderComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0F81D69A3E5001989DF /* LFImageHeaderComponentView.xib */; };
+		CC9FB0FB1D69A586001989DF /* LFRestaurantCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FA1D69A586001989DF /* LFRestaurantCardPresenter.swift */; };
+		CC9FB0FD1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */; };
+		CC9FB0FF1D69AB45001989DF /* LFRestaurantContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */; };
 		F34B4715F7691653F07C3FBB /* Pods_Test_LaFourchette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +68,12 @@
 		CC9FB0EE1D699339001989DF /* LFNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFNetworkManager.swift; path = "Network Communication/LFNetworkManager.swift"; sourceTree = "<group>"; };
 		CC9FB0F01D699425001989DF /* LFNetworkEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFNetworkEndpoints.swift; path = "Network Communication/LFNetworkEndpoints.swift"; sourceTree = "<group>"; };
 		CC9FB0F21D699AF3001989DF /* LFRestaurantBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantBO.swift; path = Model/LFRestaurantBO.swift; sourceTree = "<group>"; };
+		CC9FB0F41D69A318001989DF /* LFScrollingHeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFScrollingHeaderReusableView.swift; path = Cells/LFScrollingHeaderReusableView.swift; sourceTree = "<group>"; };
+		CC9FB0F61D69A3C8001989DF /* LFImageHeaderComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFImageHeaderComponentView.swift; path = Components/LFImageHeaderComponentView.swift; sourceTree = "<group>"; };
+		CC9FB0F81D69A3E5001989DF /* LFImageHeaderComponentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LFImageHeaderComponentView.xib; path = Cells/LFImageHeaderComponentView.xib; sourceTree = "<group>"; };
+		CC9FB0FA1D69A586001989DF /* LFRestaurantCardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardPresenter.swift; path = Presenters/LFRestaurantCardPresenter.swift; sourceTree = "<group>"; };
+		CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardCollectionViewLayoutStrategy.swift; path = Presenters/LFRestaurantCardCollectionViewLayoutStrategy.swift; sourceTree = "<group>"; };
+		CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantContainerPresenter.swift; path = Presenters/LFRestaurantContainerPresenter.swift; sourceTree = "<group>"; };
 		E8F6E2651FF130FD9AFBE81D /* Pods-Test_LaFourchette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_LaFourchette.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +200,8 @@
 		CC9FB0DD1D698A63001989DF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CC9FB0F61D69A3C8001989DF /* LFImageHeaderComponentView.swift */,
+				CC9FB0F81D69A3E5001989DF /* LFImageHeaderComponentView.xib */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -195,6 +209,7 @@
 		CC9FB0DE1D698A69001989DF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CC9FB0F41D69A318001989DF /* LFScrollingHeaderReusableView.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -202,6 +217,9 @@
 		CC9FB0DF1D698A75001989DF /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */,
+				CC9FB0FA1D69A586001989DF /* LFRestaurantCardPresenter.swift */,
+				CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -333,6 +351,7 @@
 				CC9FB0B81D698712001989DF /* LaunchScreen.storyboard in Resources */,
 				CC9FB0B51D698712001989DF /* Assets.xcassets in Resources */,
 				CC9FB0B31D698712001989DF /* Main.storyboard in Resources */,
+				CC9FB0F91D69A3E5001989DF /* LFImageHeaderComponentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,14 +424,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9FB0F71D69A3C8001989DF /* LFImageHeaderComponentView.swift in Sources */,
+				CC9FB0F51D69A318001989DF /* LFScrollingHeaderReusableView.swift in Sources */,
+				CC9FB0FD1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift in Sources */,
 				CC9FB0E91D698C3F001989DF /* LFContainerView.swift in Sources */,
 				CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */,
 				CC9FB0EF1D699339001989DF /* LFNetworkManager.swift in Sources */,
 				CC9FB0F31D699AF3001989DF /* LFRestaurantBO.swift in Sources */,
 				CC9FB0F11D699425001989DF /* LFNetworkEndpoints.swift in Sources */,
 				CC9FB0EB1D698CC3001989DF /* LFRestaurantCardView.swift in Sources */,
+				CC9FB0FB1D69A586001989DF /* LFRestaurantCardPresenter.swift in Sources */,
 				CC9FB0E51D698B97001989DF /* LFContainerViewController.swift in Sources */,
 				CC9FB0E71D698BB8001989DF /* LFRestaurantCardViewController.swift in Sources */,
+				CC9FB0FF1D69AB45001989DF /* LFRestaurantContainerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

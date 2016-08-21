@@ -14,7 +14,7 @@ import AlamofireObjectMapper
 protocol LFNetworkRestaurantInterface: class {
     func baseURLString(method method: String) -> String;
     func downloadRestaurant(idRestaurant idRestaurant: Int,
-                                         successBlock:(LFRestaurantDecorator?) -> Void,
+                                         successBlock:(LFRestaurantDataInterface) -> Void,
                                          failureBlock:(NSError?) -> Void)
 }
 
@@ -31,7 +31,7 @@ class LFNetworkManager: NSObject, LFNetworkRestaurantInterface {
     func baseURLString(method method: String) -> String { return NSString(format: LFNetworkEndpoints.API_BASE_URL, LFNetworkEndpoints.API_KEY, method) as String; }
     
     /* Implementation of th edownload request */
-    func downloadRestaurant(idRestaurant idRestaurant: Int, successBlock: (LFRestaurantDecorator?) -> Void, failureBlock: (NSError?) -> Void) {
+    func downloadRestaurant(idRestaurant idRestaurant: Int, successBlock: (LFRestaurantDataInterface) -> Void, failureBlock: (NSError?) -> Void) {
 
         // Format URL String
         let urlString = NSString(format: LFNetworkEndpoints.GET_RESTAURANT_ENDPOINT, baseURLString(method: LFNetworkEndpoints.GET_RESTAURANT_METHOD), NSString(format: "%d", idRestaurant) as String) as String;

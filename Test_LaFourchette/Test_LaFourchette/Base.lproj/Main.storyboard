@@ -82,13 +82,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XYQ-5G-9vR">
                                     <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="150"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8CN-AM-e3v">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DummyCell" id="8CN-AM-e3v">
+                                        <rect key="frame" x="0.0" y="150" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -97,6 +97,54 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LFScrollingHeaderReusableView" id="wrn-Qk-mve" customClass="LFScrollingHeaderReusableView" customModule="Test_LaFourchette" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDs-SE-aSB">
+                                            <rect key="frame" x="20" y="84" width="54" height="27"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmy-OY-beb">
+                                            <rect key="frame" x="20" y="113" width="36" height="17"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvx-8i-iKM">
+                                            <rect key="frame" x="540" y="90" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="Ioq-YE-hcx"/>
+                                                <constraint firstAttribute="height" constant="40" id="QHE-tj-Ybr"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a47-jA-iBc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                        </scrollView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dDs-SE-aSB" firstAttribute="leading" secondItem="qmy-OY-beb" secondAttribute="leading" id="0Er-a1-j0K"/>
+                                        <constraint firstItem="qmy-OY-beb" firstAttribute="top" secondItem="dDs-SE-aSB" secondAttribute="bottom" constant="2" id="GGo-LP-JyA"/>
+                                        <constraint firstItem="a47-jA-iBc" firstAttribute="leading" secondItem="wrn-Qk-mve" secondAttribute="leading" id="UbS-vH-9em"/>
+                                        <constraint firstItem="qmy-OY-beb" firstAttribute="leading" secondItem="wrn-Qk-mve" secondAttribute="leading" constant="20" id="Vef-Pu-e1d"/>
+                                        <constraint firstAttribute="bottom" secondItem="a47-jA-iBc" secondAttribute="bottom" id="ZM5-8G-zAw"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bvx-8i-iKM" secondAttribute="trailing" constant="20" id="dDx-lM-2Tr"/>
+                                        <constraint firstItem="a47-jA-iBc" firstAttribute="top" secondItem="wrn-Qk-mve" secondAttribute="top" id="fed-Of-5jV"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bvx-8i-iKM" secondAttribute="bottom" constant="20" id="j5p-hI-NUB"/>
+                                        <constraint firstAttribute="trailing" secondItem="a47-jA-iBc" secondAttribute="trailing" id="qPM-9j-Jzo"/>
+                                        <constraint firstAttribute="bottom" secondItem="qmy-OY-beb" secondAttribute="bottom" constant="20" id="uZJ-us-3tA"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="labelSubtitle" destination="qmy-OY-beb" id="gPm-ik-eeh"/>
+                                        <outlet property="labelTitle" destination="dDs-SE-aSB" id="o7A-M9-pAC"/>
+                                        <outlet property="scrollView" destination="a47-jA-iBc" id="4Bw-LB-duM"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
