@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0AD1D698712001989DF /* AppDelegate.swift */; };
-		CC9FB0B01D698712001989DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0AF1D698712001989DF /* ViewController.swift */; };
 		CC9FB0B31D698712001989DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0B11D698712001989DF /* Main.storyboard */; };
 		CC9FB0B51D698712001989DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0B41D698712001989DF /* Assets.xcassets */; };
 		CC9FB0B81D698712001989DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0B61D698712001989DF /* LaunchScreen.storyboard */; };
 		CC9FB0C31D698712001989DF /* Test_LaFourchetteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0C21D698712001989DF /* Test_LaFourchetteTests.swift */; };
 		CC9FB0CE1D698712001989DF /* Test_LaFourchetteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0CD1D698712001989DF /* Test_LaFourchetteUITests.swift */; };
+		CC9FB0E51D698B97001989DF /* LFContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */; };
+		CC9FB0E71D698BB8001989DF /* LFRestaurantCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */; };
+		CC9FB0E91D698C3F001989DF /* LFContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0E81D698C3F001989DF /* LFContainerView.swift */; };
+		CC9FB0EB1D698CC3001989DF /* LFRestaurantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0EA1D698CC3001989DF /* LFRestaurantCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		CC9FB0AA1D698712001989DF /* Test_LaFourchette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_LaFourchette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9FB0AD1D698712001989DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC9FB0AF1D698712001989DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC9FB0B21D698712001989DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC9FB0B41D698712001989DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9FB0B71D698712001989DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		CC9FB0C91D698712001989DF /* Test_LaFourchetteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_LaFourchetteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9FB0CD1D698712001989DF /* Test_LaFourchetteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_LaFourchetteUITests.swift; sourceTree = "<group>"; };
 		CC9FB0CF1D698712001989DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFContainerViewController.swift; path = Controllers/LFContainerViewController.swift; sourceTree = "<group>"; };
+		CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardViewController.swift; path = Controllers/LFRestaurantCardViewController.swift; sourceTree = "<group>"; };
+		CC9FB0E81D698C3F001989DF /* LFContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFContainerView.swift; path = Views/LFContainerView.swift; sourceTree = "<group>"; };
+		CC9FB0EA1D698CC3001989DF /* LFRestaurantCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardView.swift; path = Views/LFRestaurantCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,14 @@
 		CC9FB0AC1D698712001989DF /* Test_LaFourchette */ = {
 			isa = PBXGroup;
 			children = (
+				CC9FB0E31D698AC4001989DF /* Network Communication */,
+				CC9FB0E21D698ABF001989DF /* Model */,
+				CC9FB0DF1D698A75001989DF /* Presenters */,
+				CC9FB0DE1D698A69001989DF /* Cells */,
+				CC9FB0DD1D698A63001989DF /* Components */,
+				CC9FB0DC1D698A5A001989DF /* Views */,
+				CC9FB0DB1D698A47001989DF /* Controllers */,
 				CC9FB0AD1D698712001989DF /* AppDelegate.swift */,
-				CC9FB0AF1D698712001989DF /* ViewController.swift */,
 				CC9FB0B11D698712001989DF /* Main.storyboard */,
 				CC9FB0B41D698712001989DF /* Assets.xcassets */,
 				CC9FB0B61D698712001989DF /* LaunchScreen.storyboard */,
@@ -123,6 +135,59 @@
 				CC9FB0CF1D698712001989DF /* Info.plist */,
 			);
 			path = Test_LaFourchetteUITests;
+			sourceTree = "<group>";
+		};
+		CC9FB0DB1D698A47001989DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */,
+				CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CC9FB0DC1D698A5A001989DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0E81D698C3F001989DF /* LFContainerView.swift */,
+				CC9FB0EA1D698CC3001989DF /* LFRestaurantCardView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CC9FB0DD1D698A63001989DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		CC9FB0DE1D698A69001989DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CC9FB0DF1D698A75001989DF /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CC9FB0E21D698ABF001989DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC9FB0E31D698AC4001989DF /* Network Communication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Network Communication";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9FB0B01D698712001989DF /* ViewController.swift in Sources */,
+				CC9FB0E91D698C3F001989DF /* LFContainerView.swift in Sources */,
 				CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */,
+				CC9FB0EB1D698CC3001989DF /* LFRestaurantCardView.swift in Sources */,
+				CC9FB0E51D698B97001989DF /* LFContainerViewController.swift in Sources */,
+				CC9FB0E71D698BB8001989DF /* LFRestaurantCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +554,7 @@
 				CC9FB0D41D698712001989DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC9FB0D51D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchetteTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +563,7 @@
 				CC9FB0D71D698712001989DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC9FB0D81D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchetteUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +572,7 @@
 				CC9FB0DA1D698712001989DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

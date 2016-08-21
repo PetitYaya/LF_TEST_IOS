@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oP9-kG-dWM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="uHq-l2-HBb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oP9-kG-dWM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="7t9-xQ-l1V"/>
+                        <viewControllerLayoutGuide type="bottom" id="hkB-z2-QCQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="JwV-vu-wY4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilO-rk-x2D">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="Bpc-x5-b9D" kind="embed" id="Qbl-AV-KPN"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ilO-rk-x2D" secondAttribute="trailing" id="Tyq-WE-nG7"/>
+                            <constraint firstAttribute="bottom" secondItem="ilO-rk-x2D" secondAttribute="bottom" id="bQi-Kt-gfd"/>
+                            <constraint firstItem="ilO-rk-x2D" firstAttribute="top" secondItem="JwV-vu-wY4" secondAttribute="top" id="bde-dk-io7"/>
+                            <constraint firstItem="ilO-rk-x2D" firstAttribute="leading" secondItem="JwV-vu-wY4" secondAttribute="leading" id="tfX-bP-CFR"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxq-lp-pwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="701" y="418"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="FTk-Fb-d1c">
+            <objects>
+                <viewController id="Bpc-x5-b9D" customClass="LFContainerViewController" customModule="Test_LaFourchette" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dhD-Mc-rYP" customClass="LFContainerView" customModule="Test_LaFourchette" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-fY-AtD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wVw-fY-AtD" firstAttribute="leading" secondItem="dhD-Mc-rYP" secondAttribute="leading" id="2kT-mm-jQV"/>
+                            <constraint firstItem="wVw-fY-AtD" firstAttribute="top" secondItem="dhD-Mc-rYP" secondAttribute="top" id="Htr-wc-W8W"/>
+                            <constraint firstAttribute="trailing" secondItem="wVw-fY-AtD" secondAttribute="trailing" id="ZXC-d9-38Z"/>
+                            <constraint firstAttribute="bottom" secondItem="wVw-fY-AtD" secondAttribute="bottom" id="xlm-uZ-VoO"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="scrollView" destination="wVw-fY-AtD" id="cI2-Yb-p7J"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGH-8i-TGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="418"/>
+        </scene>
+        <!--Restaurant Card View Controller-->
+        <scene sceneID="UF7-7f-zr1">
+            <objects>
+                <viewController storyboardIdentifier="LFRestaurantCardViewController" id="MQB-k1-Ubo" customClass="LFRestaurantCardViewController" customModule="Test_LaFourchette" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dba-y8-CbR"/>
+                        <viewControllerLayoutGuide type="bottom" id="vQi-Ch-BGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B0a-T0-uVs" customClass="LFRestaurantCardView" customModule="Test_LaFourchette" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="28J-O5-db9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XYQ-5G-9vR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8CN-AM-e3v">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="28J-O5-db9" secondAttribute="trailing" id="VjA-aA-u54"/>
+                            <constraint firstItem="28J-O5-db9" firstAttribute="top" secondItem="B0a-T0-uVs" secondAttribute="top" id="YPZ-VO-nFz"/>
+                            <constraint firstAttribute="bottom" secondItem="28J-O5-db9" secondAttribute="bottom" id="g4z-G2-lMC"/>
+                            <constraint firstItem="28J-O5-db9" firstAttribute="leading" secondItem="B0a-T0-uVs" secondAttribute="leading" id="n0t-wH-okt"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="collectionView" destination="28J-O5-db9" id="rG9-Tz-TaR"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hj3-cN-DeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="418"/>
         </scene>
     </scenes>
 </document>
