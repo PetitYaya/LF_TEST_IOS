@@ -27,6 +27,10 @@
 		CC9FB0FD1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */; };
 		CC9FB0FF1D69AB45001989DF /* LFRestaurantContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */; };
 		CC9FB1011D69C1BB001989DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB1001D69C1BB001989DF /* ViewController.swift */; };
+		CC9FB1031D69C5C9001989DF /* LFMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB1021D69C5C9001989DF /* LFMenuCollectionViewCell.swift */; };
+		CC9FB1051D69C821001989DF /* LFRestaurantDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB1041D69C821001989DF /* LFRestaurantDescriptionCollectionViewCell.swift */; };
+		CC9FB1071D69C86A001989DF /* LFRestaurantMapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB1061D69C86A001989DF /* LFRestaurantMapCollectionViewCell.swift */; };
+		CC9FB1091D69C9A7001989DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9FB1081D69C9A7001989DF /* MapKit.framework */; };
 		F34B4715F7691653F07C3FBB /* Pods_Test_LaFourchette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +80,10 @@
 		CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardCollectionViewLayoutStrategy.swift; path = Presenters/LFRestaurantCardCollectionViewLayoutStrategy.swift; sourceTree = "<group>"; };
 		CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantContainerPresenter.swift; path = Presenters/LFRestaurantContainerPresenter.swift; sourceTree = "<group>"; };
 		CC9FB1001D69C1BB001989DF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		CC9FB1021D69C5C9001989DF /* LFMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFMenuCollectionViewCell.swift; path = Cells/LFMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC9FB1041D69C821001989DF /* LFRestaurantDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantDescriptionCollectionViewCell.swift; path = Cells/LFRestaurantDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC9FB1061D69C86A001989DF /* LFRestaurantMapCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantMapCollectionViewCell.swift; path = Cells/LFRestaurantMapCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC9FB1081D69C9A7001989DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E8F6E2651FF130FD9AFBE81D /* Pods-Test_LaFourchette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_LaFourchette.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9FB1091D69C9A7001989DF /* MapKit.framework in Frameworks */,
 				F34B4715F7691653F07C3FBB /* Pods_Test_LaFourchette.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +117,7 @@
 		8144145750164D068651E691 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC9FB1081D69C9A7001989DF /* MapKit.framework */,
 				4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */,
 			);
 			name = Frameworks;
@@ -213,6 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				CC9FB0F41D69A318001989DF /* LFScrollingHeaderReusableView.swift */,
+				CC9FB1021D69C5C9001989DF /* LFMenuCollectionViewCell.swift */,
+				CC9FB1041D69C821001989DF /* LFRestaurantDescriptionCollectionViewCell.swift */,
+				CC9FB1061D69C86A001989DF /* LFRestaurantMapCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -427,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9FB1051D69C821001989DF /* LFRestaurantDescriptionCollectionViewCell.swift in Sources */,
 				CC9FB0F71D69A3C8001989DF /* LFImageHeaderComponentView.swift in Sources */,
 				CC9FB0F51D69A318001989DF /* LFScrollingHeaderReusableView.swift in Sources */,
 				CC9FB0FD1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift in Sources */,
@@ -435,9 +449,11 @@
 				CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */,
 				CC9FB0EF1D699339001989DF /* LFNetworkManager.swift in Sources */,
 				CC9FB0F31D699AF3001989DF /* LFRestaurantBO.swift in Sources */,
+				CC9FB1071D69C86A001989DF /* LFRestaurantMapCollectionViewCell.swift in Sources */,
 				CC9FB0F11D699425001989DF /* LFNetworkEndpoints.swift in Sources */,
 				CC9FB0EB1D698CC3001989DF /* LFRestaurantCardView.swift in Sources */,
 				CC9FB0FB1D69A586001989DF /* LFRestaurantCardPresenter.swift in Sources */,
+				CC9FB1031D69C5C9001989DF /* LFMenuCollectionViewCell.swift in Sources */,
 				CC9FB0E51D698B97001989DF /* LFContainerViewController.swift in Sources */,
 				CC9FB0E71D698BB8001989DF /* LFRestaurantCardViewController.swift in Sources */,
 				CC9FB0FF1D69AB45001989DF /* LFRestaurantContainerPresenter.swift in Sources */,

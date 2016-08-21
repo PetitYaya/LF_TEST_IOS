@@ -14,6 +14,7 @@ protocol LFRestaurantDataInterface: class {
     func restaurantName()                       -> String?;
     func restaurantAddress()                    -> String?;
     func restaurantImageURL(atIndex index: Int) -> String?;
+    func restaurantDescription()                -> NSAttributedString?;
     func numberOfImages()                       -> Int;
 }
 
@@ -42,6 +43,14 @@ class LFRestaurantDecorator: NSObject, LFRestaurantDataInterface {
     }
     func restaurantImageURL(atIndex index: Int) -> String?  { return self.restaurant.imageURL(atIndex: index); }
     func numberOfImages()                       -> Int      { return self.restaurant.numberOfImages(); }
+    func restaurantDescription() -> NSAttributedString? {
+        if let speciality = self.restaurant.speciality {
+            if let cardPrice = self.restaurant.cardPrice {
+                return NSAttributedString(string: NSString(format: "Restaurant %@ à partir de %.f€", speciality, cardPrice) as String);
+            }
+        }
+        return nil;
+    }
 }
 
 class LFRestaurantBO: Mappable {
@@ -58,6 +67,9 @@ class LFRestaurantBO: Mappable {
     private let RESTAURANT_GPS_LNG_KEY              : String = "gps_long";
     private let RESTAURANT_RATE_COUNT_KEY           : String = "rate_count";
     private let RESTAURANT_PICS_DIAPORAMA_KEY       : String = "pics_diaporama";
+    private let RESTAURANT_SPECIALITY_KEY           : String = "speciality";
+    private let RESTAURANT_AVG_RATE_KEY             : String = "avg_rate";
+    private let RESTAURANT_CARD_PRICE_KEY           : String = "card_price";
     
     // Attributes
     private var idRestaurant                        : String?;
@@ -65,6 +77,9 @@ class LFRestaurantBO: Mappable {
     private var address                             : String?;
     private var city                                : String?;
     private var zipCode                             : String?;
+    private var speciality                          : String?;
+    private var avgRate                             : Double?;
+    private var cardPrice                           : Double?;
     private var addressLatitude                     : Double?;
     private var addressLongitude                    : Double?;
     private var rateCount                           : Int?;
@@ -84,6 +99,9 @@ class LFRestaurantBO: Mappable {
         addressLongitude    <- map[RESTAURANT_GPS_LNG_KEY];
         rateCount           <- map[RESTAURANT_RATE_COUNT_KEY];
         imagesURL           <- map[RESTAURANT_PICS_DIAPORAMA_KEY];
+        speciality          <- map[RESTAURANT_SPECIALITY_KEY];
+        avgRate             <- map[RESTAURANT_AVG_RATE_KEY];
+        cardPrice           <- map[RESTAURANT_CARD_PRICE_KEY];
     }
     
     // MARK: Public function

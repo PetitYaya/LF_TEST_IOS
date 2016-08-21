@@ -55,16 +55,46 @@ class LFRestaurantCardCollectionViewLayoutStrategy: LFRestaurantCardLayoutStrate
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1;
+        return 3;
     }
     
     /* CELLS */
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCellWithReuseIdentifier("DummyCell", forIndexPath: indexPath);
+        switch indexPath.item {
+            case 0:
+                return collectionView.dequeueReusableCellWithReuseIdentifier(LFMenuCollectionViewCell.IDENTIFIER, forIndexPath: indexPath);
+            case 1:
+                return collectionView.dequeueReusableCellWithReuseIdentifier(LFRestaurantDescriptionCollectionViewCell.IDENTIFIER, forIndexPath: indexPath);
+            case 2:
+                return collectionView.dequeueReusableCellWithReuseIdentifier(LFRestaurantMapCollectionViewCell.IDENTIFIER, forIndexPath: indexPath);
+            default: break
+        }
+        return UICollectionViewCell();
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(CGRectGetWidth(collectionView.frame), 30);
+        switch indexPath.item {
+            case 0:
+                return CGSizeMake(CGRectGetWidth(collectionView.frame), LFMenuCollectionViewCell.HEIGHT);
+            case 1:
+                return CGSizeMake(CGRectGetWidth(collectionView.frame), LFRestaurantDescriptionCollectionViewCell.HEIGHT);
+            case 2:
+                return CGSizeMake(CGRectGetWidth(collectionView.frame), LFRestaurantMapCollectionViewCell.heightForCell());
+            default: break
+        }
+        return CGSizeZero;
+    }
+    
+    func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        if let menuCell = cell as? LFMenuCollectionViewCell {
+            menuCell.configureCell(leftTitle: NSString(format: "%d photos", self.restaurant.numberOfImages()) as String, centerTitle: "9,3", rightTitle: "Plan");
+        }
+        else if let descCell = cell as? LFRestaurantDescriptionCollectionViewCell {
+            descCell.configureCell(title: self.restaurant.restaurantDescription());
+        }
+        else if let mapCell = cell as? LFRestaurantMapCollectionViewCell {
+            
+        }
     }
     
     /* HEADER */
