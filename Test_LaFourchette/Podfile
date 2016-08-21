@@ -4,6 +4,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Test_LaFourchette' do
+pod 'Alamofire', '~> 3.4'               #Swift - Used to handle network communication layer
+pod 'AlamofireObjectMapper', '~> 3.0'   #Swift - Used to handle network datas and binding directly into a full BO
 
 end
 
