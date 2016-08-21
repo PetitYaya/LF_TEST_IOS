@@ -1,1293 +1,669 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>107EF1653F6665097212A188</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>31E5B6913B67CA56F86C3F19</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Test_LaFourchette.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D38911138591648433DE177</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Test_LaFourchette.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7646D366184000AFC30DDD09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8144145750164D068651E691</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4D38911138591648433DE177</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>87573E227641F49C2D0F015F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>31E5B6913B67CA56F86C3F19</string>
-				<string>E8F6E2651FF130FD9AFBE81D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C33D24C7D493D2E323AFC7EA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0A11D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0AC1D698712001989DF</string>
-				<string>CC9FB0C11D698712001989DF</string>
-				<string>CC9FB0CC1D698712001989DF</string>
-				<string>CC9FB0AB1D698712001989DF</string>
-				<string>87573E227641F49C2D0F015F</string>
-				<string>8144145750164D068651E691</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0A21D698712001989DF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Yacine</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>CC9FB0A91D698712001989DF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>CC9FB0BD1D698712001989DF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>CC9FB0A91D698712001989DF</string>
-					</dict>
-					<key>CC9FB0C81D698712001989DF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>CC9FB0A91D698712001989DF</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>CC9FB0A51D698712001989DF</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>CC9FB0A11D698712001989DF</string>
-			<key>productRefGroup</key>
-			<string>CC9FB0AB1D698712001989DF</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>CC9FB0A91D698712001989DF</string>
-				<string>CC9FB0BD1D698712001989DF</string>
-				<string>CC9FB0C81D698712001989DF</string>
-			</array>
-		</dict>
-		<key>CC9FB0A51D698712001989DF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CC9FB0D01D698712001989DF</string>
-				<string>CC9FB0D11D698712001989DF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CC9FB0A61D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CC9FB0E91D698C3F001989DF</string>
-				<string>CC9FB0AE1D698712001989DF</string>
-				<string>CC9FB0EB1D698CC3001989DF</string>
-				<string>CC9FB0E51D698B97001989DF</string>
-				<string>CC9FB0E71D698BB8001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0A71D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F34B4715F7691653F07C3FBB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0A81D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CC9FB0B81D698712001989DF</string>
-				<string>CC9FB0B51D698712001989DF</string>
-				<string>CC9FB0B31D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0A91D698712001989DF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CC9FB0D21D698712001989DF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>107EF1653F6665097212A188</string>
-				<string>CC9FB0A61D698712001989DF</string>
-				<string>CC9FB0A71D698712001989DF</string>
-				<string>CC9FB0A81D698712001989DF</string>
-				<string>7646D366184000AFC30DDD09</string>
-				<string>C33D24C7D493D2E323AFC7EA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Test_LaFourchette</string>
-			<key>productName</key>
-			<string>Test_LaFourchette</string>
-			<key>productReference</key>
-			<string>CC9FB0AA1D698712001989DF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>CC9FB0AA1D698712001989DF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Test_LaFourchette.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CC9FB0AB1D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0AA1D698712001989DF</string>
-				<string>CC9FB0BE1D698712001989DF</string>
-				<string>CC9FB0C91D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0AC1D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0E31D698AC4001989DF</string>
-				<string>CC9FB0E21D698ABF001989DF</string>
-				<string>CC9FB0DF1D698A75001989DF</string>
-				<string>CC9FB0DE1D698A69001989DF</string>
-				<string>CC9FB0DD1D698A63001989DF</string>
-				<string>CC9FB0DC1D698A5A001989DF</string>
-				<string>CC9FB0DB1D698A47001989DF</string>
-				<string>CC9FB0AD1D698712001989DF</string>
-				<string>CC9FB0B11D698712001989DF</string>
-				<string>CC9FB0B41D698712001989DF</string>
-				<string>CC9FB0B61D698712001989DF</string>
-				<string>CC9FB0B91D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Test_LaFourchette</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0AD1D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0AE1D698712001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0AD1D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0B11D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0B21D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0B21D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0B31D698712001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0B11D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0B41D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0B51D698712001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0B41D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0B61D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0B71D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0B71D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0B81D698712001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0B61D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0B91D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0BA1D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CC9FB0C31D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0BB1D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0BC1D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0BD1D698712001989DF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CC9FB0D51D698712001989DF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CC9FB0BA1D698712001989DF</string>
-				<string>CC9FB0BB1D698712001989DF</string>
-				<string>CC9FB0BC1D698712001989DF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CC9FB0C01D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Test_LaFourchetteTests</string>
-			<key>productName</key>
-			<string>Test_LaFourchetteTests</string>
-			<key>productReference</key>
-			<string>CC9FB0BE1D698712001989DF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>CC9FB0BE1D698712001989DF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Test_LaFourchetteTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CC9FB0BF1D698712001989DF</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CC9FB0A21D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CC9FB0A91D698712001989DF</string>
-			<key>remoteInfo</key>
-			<string>Test_LaFourchette</string>
-		</dict>
-		<key>CC9FB0C01D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CC9FB0A91D698712001989DF</string>
-			<key>targetProxy</key>
-			<string>CC9FB0BF1D698712001989DF</string>
-		</dict>
-		<key>CC9FB0C11D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0C21D698712001989DF</string>
-				<string>CC9FB0C41D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Test_LaFourchetteTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0C21D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Test_LaFourchetteTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0C31D698712001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0C21D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0C41D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0C51D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CC9FB0CE1D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0C61D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0C71D698712001989DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC9FB0C81D698712001989DF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CC9FB0D81D698712001989DF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CC9FB0C51D698712001989DF</string>
-				<string>CC9FB0C61D698712001989DF</string>
-				<string>CC9FB0C71D698712001989DF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CC9FB0CB1D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Test_LaFourchetteUITests</string>
-			<key>productName</key>
-			<string>Test_LaFourchetteUITests</string>
-			<key>productReference</key>
-			<string>CC9FB0C91D698712001989DF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>CC9FB0C91D698712001989DF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Test_LaFourchetteUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CC9FB0CA1D698712001989DF</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CC9FB0A21D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CC9FB0A91D698712001989DF</string>
-			<key>remoteInfo</key>
-			<string>Test_LaFourchette</string>
-		</dict>
-		<key>CC9FB0CB1D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CC9FB0A91D698712001989DF</string>
-			<key>targetProxy</key>
-			<string>CC9FB0CA1D698712001989DF</string>
-		</dict>
-		<key>CC9FB0CC1D698712001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0CD1D698712001989DF</string>
-				<string>CC9FB0CF1D698712001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Test_LaFourchetteUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0CD1D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Test_LaFourchetteUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0CE1D698712001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0CD1D698712001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0CF1D698712001989DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0D01D698712001989DF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CC9FB0D11D698712001989DF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CC9FB0D21D698712001989DF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CC9FB0D31D698712001989DF</string>
-				<string>CC9FB0D41D698712001989DF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CC9FB0D31D698712001989DF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>31E5B6913B67CA56F86C3F19</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Test_LaFourchette/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.insuite.dev</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CC9FB0D41D698712001989DF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E8F6E2651FF130FD9AFBE81D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Test_LaFourchette/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.insuite.dev</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CC9FB0D51D698712001989DF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CC9FB0D61D698712001989DF</string>
-				<string>CC9FB0D71D698712001989DF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CC9FB0D61D698712001989DF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Test_LaFourchetteTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.lafourchette.test.Test-LaFourchetteTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Test_LaFourchette.app/Test_LaFourchette</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CC9FB0D71D698712001989DF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Test_LaFourchetteTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.lafourchette.test.Test-LaFourchetteTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Test_LaFourchette.app/Test_LaFourchette</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CC9FB0D81D698712001989DF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CC9FB0D91D698712001989DF</string>
-				<string>CC9FB0DA1D698712001989DF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CC9FB0D91D698712001989DF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>Test_LaFourchetteUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.lafourchette.test.Test-LaFourchetteUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Test_LaFourchette</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CC9FB0DA1D698712001989DF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>Test_LaFourchetteUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.lafourchette.test.Test-LaFourchetteUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Test_LaFourchette</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CC9FB0DB1D698A47001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0E41D698B96001989DF</string>
-				<string>CC9FB0E61D698BB8001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0DC1D698A5A001989DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC9FB0E81D698C3F001989DF</string>
-				<string>CC9FB0EA1D698CC3001989DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0DD1D698A63001989DF</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Components</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0DE1D698A69001989DF</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Cells</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0DF1D698A75001989DF</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Presenters</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0E21D698ABF001989DF</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0E31D698AC4001989DF</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Network Communication</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0E41D698B96001989DF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LFContainerViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/LFContainerViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0E51D698B97001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0E41D698B96001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0E61D698BB8001989DF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LFRestaurantCardViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/LFRestaurantCardViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0E71D698BB8001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0E61D698BB8001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0E81D698C3F001989DF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LFContainerView.swift</string>
-			<key>path</key>
-			<string>Views/LFContainerView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0E91D698C3F001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0E81D698C3F001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC9FB0EA1D698CC3001989DF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LFRestaurantCardView.swift</string>
-			<key>path</key>
-			<string>Views/LFRestaurantCardView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC9FB0EB1D698CC3001989DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC9FB0EA1D698CC3001989DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8F6E2651FF130FD9AFBE81D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Test_LaFourchette.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F34B4715F7691653F07C3FBB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4D38911138591648433DE177</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>CC9FB0A21D698712001989DF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0AD1D698712001989DF /* AppDelegate.swift */; };
+		CC9FB0B31D698712001989DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0B11D698712001989DF /* Main.storyboard */; };
+		CC9FB0B51D698712001989DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0B41D698712001989DF /* Assets.xcassets */; };
+		CC9FB0B81D698712001989DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9FB0B61D698712001989DF /* LaunchScreen.storyboard */; };
+		CC9FB0C31D698712001989DF /* Test_LaFourchetteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0C21D698712001989DF /* Test_LaFourchetteTests.swift */; };
+		CC9FB0CE1D698712001989DF /* Test_LaFourchetteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0CD1D698712001989DF /* Test_LaFourchetteUITests.swift */; };
+		CC9FB0E51D698B97001989DF /* LFContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */; };
+		CC9FB0E71D698BB8001989DF /* LFRestaurantCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */; };
+		CC9FB0E91D698C3F001989DF /* LFContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0E81D698C3F001989DF /* LFContainerView.swift */; };
+		CC9FB0EB1D698CC3001989DF /* LFRestaurantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0EA1D698CC3001989DF /* LFRestaurantCardView.swift */; };
+		CC9FB0EF1D699339001989DF /* LFNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0EE1D699339001989DF /* LFNetworkManager.swift */; };
+		CC9FB0F11D699425001989DF /* LFNetworkEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0F01D699425001989DF /* LFNetworkEndpoints.swift */; };
+		CC9FB0F31D699AF3001989DF /* LFRestaurantBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0F21D699AF3001989DF /* LFRestaurantBO.swift */; };
+		F34B4715F7691653F07C3FBB /* Pods_Test_LaFourchette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC9FB0BF1D698712001989DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC9FB0A21D698712001989DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9FB0A91D698712001989DF;
+			remoteInfo = Test_LaFourchette;
+		};
+		CC9FB0CA1D698712001989DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC9FB0A21D698712001989DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9FB0A91D698712001989DF;
+			remoteInfo = Test_LaFourchette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31E5B6913B67CA56F86C3F19 /* Pods-Test_LaFourchette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_LaFourchette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.debug.xcconfig"; sourceTree = "<group>"; };
+		4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_LaFourchette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9FB0AA1D698712001989DF /* Test_LaFourchette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_LaFourchette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9FB0AD1D698712001989DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC9FB0B21D698712001989DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC9FB0B41D698712001989DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC9FB0B71D698712001989DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC9FB0B91D698712001989DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9FB0BE1D698712001989DF /* Test_LaFourchetteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_LaFourchetteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9FB0C21D698712001989DF /* Test_LaFourchetteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_LaFourchetteTests.swift; sourceTree = "<group>"; };
+		CC9FB0C41D698712001989DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9FB0C91D698712001989DF /* Test_LaFourchetteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_LaFourchetteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9FB0CD1D698712001989DF /* Test_LaFourchetteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_LaFourchetteUITests.swift; sourceTree = "<group>"; };
+		CC9FB0CF1D698712001989DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFContainerViewController.swift; path = Controllers/LFContainerViewController.swift; sourceTree = "<group>"; };
+		CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardViewController.swift; path = Controllers/LFRestaurantCardViewController.swift; sourceTree = "<group>"; };
+		CC9FB0E81D698C3F001989DF /* LFContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFContainerView.swift; path = Views/LFContainerView.swift; sourceTree = "<group>"; };
+		CC9FB0EA1D698CC3001989DF /* LFRestaurantCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardView.swift; path = Views/LFRestaurantCardView.swift; sourceTree = "<group>"; };
+		CC9FB0EE1D699339001989DF /* LFNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFNetworkManager.swift; path = "Network Communication/LFNetworkManager.swift"; sourceTree = "<group>"; };
+		CC9FB0F01D699425001989DF /* LFNetworkEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFNetworkEndpoints.swift; path = "Network Communication/LFNetworkEndpoints.swift"; sourceTree = "<group>"; };
+		CC9FB0F21D699AF3001989DF /* LFRestaurantBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantBO.swift; path = Model/LFRestaurantBO.swift; sourceTree = "<group>"; };
+		E8F6E2651FF130FD9AFBE81D /* Pods-Test_LaFourchette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_LaFourchette.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC9FB0A71D698712001989DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34B4715F7691653F07C3FBB /* Pods_Test_LaFourchette.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9FB0BB1D698712001989DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9FB0C61D698712001989DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8144145750164D068651E691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87573E227641F49C2D0F015F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31E5B6913B67CA56F86C3F19 /* Pods-Test_LaFourchette.debug.xcconfig */,
+				E8F6E2651FF130FD9AFBE81D /* Pods-Test_LaFourchette.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC9FB0A11D698712001989DF = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0AC1D698712001989DF /* Test_LaFourchette */,
+				CC9FB0C11D698712001989DF /* Test_LaFourchetteTests */,
+				CC9FB0CC1D698712001989DF /* Test_LaFourchetteUITests */,
+				CC9FB0AB1D698712001989DF /* Products */,
+				87573E227641F49C2D0F015F /* Pods */,
+				8144145750164D068651E691 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC9FB0AB1D698712001989DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0AA1D698712001989DF /* Test_LaFourchette.app */,
+				CC9FB0BE1D698712001989DF /* Test_LaFourchetteTests.xctest */,
+				CC9FB0C91D698712001989DF /* Test_LaFourchetteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC9FB0AC1D698712001989DF /* Test_LaFourchette */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0E31D698AC4001989DF /* Network Communication */,
+				CC9FB0E21D698ABF001989DF /* Model */,
+				CC9FB0DF1D698A75001989DF /* Presenters */,
+				CC9FB0DE1D698A69001989DF /* Cells */,
+				CC9FB0DD1D698A63001989DF /* Components */,
+				CC9FB0DC1D698A5A001989DF /* Views */,
+				CC9FB0DB1D698A47001989DF /* Controllers */,
+				CC9FB0AD1D698712001989DF /* AppDelegate.swift */,
+				CC9FB0B11D698712001989DF /* Main.storyboard */,
+				CC9FB0B41D698712001989DF /* Assets.xcassets */,
+				CC9FB0B61D698712001989DF /* LaunchScreen.storyboard */,
+				CC9FB0B91D698712001989DF /* Info.plist */,
+			);
+			path = Test_LaFourchette;
+			sourceTree = "<group>";
+		};
+		CC9FB0C11D698712001989DF /* Test_LaFourchetteTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0C21D698712001989DF /* Test_LaFourchetteTests.swift */,
+				CC9FB0C41D698712001989DF /* Info.plist */,
+			);
+			path = Test_LaFourchetteTests;
+			sourceTree = "<group>";
+		};
+		CC9FB0CC1D698712001989DF /* Test_LaFourchetteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0CD1D698712001989DF /* Test_LaFourchetteUITests.swift */,
+				CC9FB0CF1D698712001989DF /* Info.plist */,
+			);
+			path = Test_LaFourchetteUITests;
+			sourceTree = "<group>";
+		};
+		CC9FB0DB1D698A47001989DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */,
+				CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CC9FB0DC1D698A5A001989DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0E81D698C3F001989DF /* LFContainerView.swift */,
+				CC9FB0EA1D698CC3001989DF /* LFRestaurantCardView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CC9FB0DD1D698A63001989DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		CC9FB0DE1D698A69001989DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CC9FB0DF1D698A75001989DF /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CC9FB0E21D698ABF001989DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0F21D699AF3001989DF /* LFRestaurantBO.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC9FB0E31D698AC4001989DF /* Network Communication */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB0EE1D699339001989DF /* LFNetworkManager.swift */,
+				CC9FB0F01D699425001989DF /* LFNetworkEndpoints.swift */,
+			);
+			name = "Network Communication";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC9FB0A91D698712001989DF /* Test_LaFourchette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9FB0D21D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchette" */;
+			buildPhases = (
+				107EF1653F6665097212A188 /* Check Pods Manifest.lock */,
+				CC9FB0A61D698712001989DF /* Sources */,
+				CC9FB0A71D698712001989DF /* Frameworks */,
+				CC9FB0A81D698712001989DF /* Resources */,
+				7646D366184000AFC30DDD09 /* Embed Pods Frameworks */,
+				C33D24C7D493D2E323AFC7EA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test_LaFourchette;
+			productName = Test_LaFourchette;
+			productReference = CC9FB0AA1D698712001989DF /* Test_LaFourchette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC9FB0BD1D698712001989DF /* Test_LaFourchetteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9FB0D51D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchetteTests" */;
+			buildPhases = (
+				CC9FB0BA1D698712001989DF /* Sources */,
+				CC9FB0BB1D698712001989DF /* Frameworks */,
+				CC9FB0BC1D698712001989DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC9FB0C01D698712001989DF /* PBXTargetDependency */,
+			);
+			name = Test_LaFourchetteTests;
+			productName = Test_LaFourchetteTests;
+			productReference = CC9FB0BE1D698712001989DF /* Test_LaFourchetteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC9FB0C81D698712001989DF /* Test_LaFourchetteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9FB0D81D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchetteUITests" */;
+			buildPhases = (
+				CC9FB0C51D698712001989DF /* Sources */,
+				CC9FB0C61D698712001989DF /* Frameworks */,
+				CC9FB0C71D698712001989DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC9FB0CB1D698712001989DF /* PBXTargetDependency */,
+			);
+			name = Test_LaFourchetteUITests;
+			productName = Test_LaFourchetteUITests;
+			productReference = CC9FB0C91D698712001989DF /* Test_LaFourchetteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC9FB0A21D698712001989DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yacine;
+				TargetAttributes = {
+					CC9FB0A91D698712001989DF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CC9FB0BD1D698712001989DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CC9FB0A91D698712001989DF;
+					};
+					CC9FB0C81D698712001989DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CC9FB0A91D698712001989DF;
+					};
+				};
+			};
+			buildConfigurationList = CC9FB0A51D698712001989DF /* Build configuration list for PBXProject "Test_LaFourchette" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC9FB0A11D698712001989DF;
+			productRefGroup = CC9FB0AB1D698712001989DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC9FB0A91D698712001989DF /* Test_LaFourchette */,
+				CC9FB0BD1D698712001989DF /* Test_LaFourchetteTests */,
+				CC9FB0C81D698712001989DF /* Test_LaFourchetteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC9FB0A81D698712001989DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9FB0B81D698712001989DF /* LaunchScreen.storyboard in Resources */,
+				CC9FB0B51D698712001989DF /* Assets.xcassets in Resources */,
+				CC9FB0B31D698712001989DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9FB0BC1D698712001989DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9FB0C71D698712001989DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		107EF1653F6665097212A188 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7646D366184000AFC30DDD09 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33D24C7D493D2E323AFC7EA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC9FB0A61D698712001989DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9FB0E91D698C3F001989DF /* LFContainerView.swift in Sources */,
+				CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */,
+				CC9FB0EF1D699339001989DF /* LFNetworkManager.swift in Sources */,
+				CC9FB0F31D699AF3001989DF /* LFRestaurantBO.swift in Sources */,
+				CC9FB0F11D699425001989DF /* LFNetworkEndpoints.swift in Sources */,
+				CC9FB0EB1D698CC3001989DF /* LFRestaurantCardView.swift in Sources */,
+				CC9FB0E51D698B97001989DF /* LFContainerViewController.swift in Sources */,
+				CC9FB0E71D698BB8001989DF /* LFRestaurantCardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9FB0BA1D698712001989DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9FB0C31D698712001989DF /* Test_LaFourchetteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9FB0C51D698712001989DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9FB0CE1D698712001989DF /* Test_LaFourchetteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC9FB0C01D698712001989DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9FB0A91D698712001989DF /* Test_LaFourchette */;
+			targetProxy = CC9FB0BF1D698712001989DF /* PBXContainerItemProxy */;
+		};
+		CC9FB0CB1D698712001989DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9FB0A91D698712001989DF /* Test_LaFourchette */;
+			targetProxy = CC9FB0CA1D698712001989DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC9FB0B11D698712001989DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9FB0B21D698712001989DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC9FB0B61D698712001989DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9FB0B71D698712001989DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC9FB0D01D698712001989DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC9FB0D11D698712001989DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC9FB0D31D698712001989DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E5B6913B67CA56F86C3F19 /* Pods-Test_LaFourchette.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Test_LaFourchette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.insuite.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC9FB0D41D698712001989DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F6E2651FF130FD9AFBE81D /* Pods-Test_LaFourchette.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Test_LaFourchette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.insuite.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC9FB0D61D698712001989DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Test_LaFourchetteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafourchette.test.Test-LaFourchetteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_LaFourchette.app/Test_LaFourchette";
+			};
+			name = Debug;
+		};
+		CC9FB0D71D698712001989DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Test_LaFourchetteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafourchette.test.Test-LaFourchetteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_LaFourchette.app/Test_LaFourchette";
+			};
+			name = Release;
+		};
+		CC9FB0D91D698712001989DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Test_LaFourchetteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafourchette.test.Test-LaFourchetteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Test_LaFourchette;
+			};
+			name = Debug;
+		};
+		CC9FB0DA1D698712001989DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Test_LaFourchetteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafourchette.test.Test-LaFourchetteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Test_LaFourchette;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC9FB0A51D698712001989DF /* Build configuration list for PBXProject "Test_LaFourchette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9FB0D01D698712001989DF /* Debug */,
+				CC9FB0D11D698712001989DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9FB0D21D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9FB0D31D698712001989DF /* Debug */,
+				CC9FB0D41D698712001989DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9FB0D51D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchetteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9FB0D61D698712001989DF /* Debug */,
+				CC9FB0D71D698712001989DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9FB0D81D698712001989DF /* Build configuration list for PBXNativeTarget "Test_LaFourchetteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9FB0D91D698712001989DF /* Debug */,
+				CC9FB0DA1D698712001989DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC9FB0A21D698712001989DF /* Project object */;
+}
