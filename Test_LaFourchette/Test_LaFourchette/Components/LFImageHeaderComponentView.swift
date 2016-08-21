@@ -37,5 +37,22 @@ class LFImageHeaderComponentView: UIView {
     }
     
     // MARK: Public Methods
-    
+    func loadImage(imageURL url: String, atIndex: Int) {
+        if imgView.image == nil {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
+                if let imageURL = NSURL(string: url) {
+                    if let imageData = NSData(contentsOfURL: imageURL) {
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.activityIndicatorView.stopAnimating();
+                            self.imgView.alpha = 0.0;
+                            self.imgView.image = UIImage(data: imageData);
+                            UIView.animateWithDuration(0.3, animations: {
+                                self.imgView.alpha = 1.0;
+                            });
+                        });
+                    }
+                }
+            }
+        }
+    }
 }

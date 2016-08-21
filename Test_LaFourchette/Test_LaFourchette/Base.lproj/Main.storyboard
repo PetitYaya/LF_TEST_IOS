@@ -123,8 +123,11 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                         </button>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a47-jA-iBc">
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a47-jA-iBc">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="wrn-Qk-mve" id="VYf-aP-LJG"/>
+                                            </connections>
                                         </scrollView>
                                     </subviews>
                                     <constraints>

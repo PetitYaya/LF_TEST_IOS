@@ -26,6 +26,7 @@
 		CC9FB0FB1D69A586001989DF /* LFRestaurantCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FA1D69A586001989DF /* LFRestaurantCardPresenter.swift */; };
 		CC9FB0FD1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */; };
 		CC9FB0FF1D69AB45001989DF /* LFRestaurantContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */; };
+		CC9FB1011D69C1BB001989DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FB1001D69C1BB001989DF /* ViewController.swift */; };
 		F34B4715F7691653F07C3FBB /* Pods_Test_LaFourchette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38911138591648433DE177 /* Pods_Test_LaFourchette.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		CC9FB0FA1D69A586001989DF /* LFRestaurantCardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardPresenter.swift; path = Presenters/LFRestaurantCardPresenter.swift; sourceTree = "<group>"; };
 		CC9FB0FC1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantCardCollectionViewLayoutStrategy.swift; path = Presenters/LFRestaurantCardCollectionViewLayoutStrategy.swift; sourceTree = "<group>"; };
 		CC9FB0FE1D69AB45001989DF /* LFRestaurantContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFRestaurantContainerPresenter.swift; path = Presenters/LFRestaurantContainerPresenter.swift; sourceTree = "<group>"; };
+		CC9FB1001D69C1BB001989DF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		E8F6E2651FF130FD9AFBE81D /* Pods-Test_LaFourchette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_LaFourchette.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test_LaFourchette/Pods-Test_LaFourchette.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 		CC9FB0DB1D698A47001989DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC9FB1001D69C1BB001989DF /* ViewController.swift */,
 				CC9FB0E41D698B96001989DF /* LFContainerViewController.swift */,
 				CC9FB0E61D698BB8001989DF /* LFRestaurantCardViewController.swift */,
 			);
@@ -428,6 +431,7 @@
 				CC9FB0F51D69A318001989DF /* LFScrollingHeaderReusableView.swift in Sources */,
 				CC9FB0FD1D69A5EC001989DF /* LFRestaurantCardCollectionViewLayoutStrategy.swift in Sources */,
 				CC9FB0E91D698C3F001989DF /* LFContainerView.swift in Sources */,
+				CC9FB1011D69C1BB001989DF /* ViewController.swift in Sources */,
 				CC9FB0AE1D698712001989DF /* AppDelegate.swift in Sources */,
 				CC9FB0EF1D699339001989DF /* LFNetworkManager.swift in Sources */,
 				CC9FB0F31D699AF3001989DF /* LFRestaurantBO.swift in Sources */,

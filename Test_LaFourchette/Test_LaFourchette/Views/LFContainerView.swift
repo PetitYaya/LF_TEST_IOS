@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LFContainerView: UIView {
+class LFContainerView: UIView, LFRestaurantContainerPresenterViewDelegate {
 
     @IBOutlet private weak var scrollView: UIScrollView!;
     
@@ -43,5 +43,14 @@ class LFContainerView: UIView {
             }
         }
         self.populateViewWithChildControllers(containerController: parentController, childControllers: childControllers);
+    }
+    
+    func bindViewWithPresenter(presenter: LFRestaurantContainerPresenter) {
+        presenter.viewDelegate = self;
+    }
+    
+    // MARK: LFRestaurantContainerPresenterViewDelegate
+    func moveToChildViewController(atIndex: Int) {
+        self.scrollView.setContentOffset(CGPointMake(CGRectGetWidth(scrollView.frame) * CGFloat(atIndex), 0), animated: true);
     }
 }

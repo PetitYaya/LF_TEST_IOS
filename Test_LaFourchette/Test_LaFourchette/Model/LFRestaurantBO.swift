@@ -14,6 +14,7 @@ protocol LFRestaurantDataInterface: class {
     func restaurantName()                       -> String?;
     func restaurantAddress()                    -> String?;
     func restaurantImageURL(atIndex index: Int) -> String?;
+    func numberOfImages()                       -> Int;
 }
 
 // Use to format data correctly base on restaurant BO
@@ -39,7 +40,8 @@ class LFRestaurantDecorator: NSObject, LFRestaurantDataInterface {
         }
         return nil;
     }
-    func restaurantImageURL(atIndex index: Int) -> String? { return self.restaurant.imageURL(atIndex: index); }
+    func restaurantImageURL(atIndex index: Int) -> String?  { return self.restaurant.imageURL(atIndex: index); }
+    func numberOfImages()                       -> Int      { return self.restaurant.numberOfImages(); }
 }
 
 class LFRestaurantBO: Mappable {
@@ -92,6 +94,13 @@ class LFRestaurantBO: Mappable {
             }
         }
         return nil;
+    }
+    
+    func numberOfImages() -> Int {
+        if let images = self.imagesURL {
+            return images.count;
+        }
+        return 0;
     }
 }
 
